@@ -14,6 +14,7 @@ pipeline {
                echo "testing code"
                """
            }
+       }
       stage('Deploy Code') {
           steps {
                sh """
