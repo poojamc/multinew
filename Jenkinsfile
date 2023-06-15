@@ -8,6 +8,12 @@ pipeline {
                """
            }
        }
+       stage('test Code') {
+           steps {
+               sh """
+               echo "testing code"
+               """
+           }
       stage('Deploy Code') {
           steps {
                sh """
