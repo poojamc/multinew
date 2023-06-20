@@ -5,6 +5,7 @@ pipeline {
            steps {
                sh """
                echo "Building Artifact"
+               ech "hello its building"
                """
            }
        }
