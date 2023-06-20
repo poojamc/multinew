@@ -15,7 +15,14 @@ pipeline {
                """
            }
        }
-      stage('Deploy Code') {
+      stage('Delivery Code') {
+          steps {
+               sh """
+               echo "Delivering Code"
+               """
+          }
+      }
+         stage('Deploy Code') {
           steps {
                sh """
                echo "Deploying Code"
